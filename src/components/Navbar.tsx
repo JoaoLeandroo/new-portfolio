@@ -1,0 +1,12 @@
+const Navbar = () => {
+  return (
+    <header className="w-full max-w-[1980px] mx-auto flex justify-end p-4 sticky top-0">
+      <nav>
+        <input type="checkbox" value="synthwave" className="toggle theme-controller" />
+
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

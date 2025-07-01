@@ -1,6 +1,7 @@
 @import "tailwindcss";
-@plugin "daisyui";
-
+@plugin "daisyui" {
+  themes: all;
+}
 
 @theme inline {
   --font-anton: var(--font-anton);

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins, Anton } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 const fontPoppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -25,11 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="lofi">
       <body
         className={`${fontPoppins.className} ${fontAnton.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
