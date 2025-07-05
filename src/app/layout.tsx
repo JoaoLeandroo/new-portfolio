@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Anton } from "next/font/google";
+import { Poppins, Bungee } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -9,7 +9,7 @@ const fontPoppins = Poppins({
   variable: "--font-poppins",
 });
 
-const fontAnton = Anton({
+const fontAnton = Bungee({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--font-anton",
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="lofi">
+    <html lang="en" data-theme="corporate">
       <body
         className={`${fontPoppins.className} ${fontAnton.variable} antialiased`}
       >
