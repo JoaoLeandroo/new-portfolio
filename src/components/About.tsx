@@ -37,8 +37,6 @@ const About = () => {
           <ul className="flex flex-wrap items-center gap-5">
             <li className="btn">inteligência artificial</li>
             <li className="btn">Tecnologia</li>
-                        <li className="btn">teste  ia inteligência artificial</li>
-            <li className="btn">Tecnologia</li>
           </ul>
         </div>
       </article>
