@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import StartSection from "@/components/StartSection";
 
@@ -13,7 +14,9 @@ export default function Home() {
 
       {/* habilidades */}
       <Skills/>
+
       {/* Projetos */}
+      <Projects/>
     </main>
   );
 }
