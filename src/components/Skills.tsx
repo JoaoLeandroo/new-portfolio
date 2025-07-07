@@ -32,27 +32,34 @@ interface SkillsProps {
 
 const SkillsCard = ({ name, icon: Icon, colorBg, size = 24 }: SkillsProps) => (
   <div
-    /* define a CSS variable só para este elemento */
     style={{ "--hover-bg": colorBg } as React.CSSProperties}
     className="
       flex flex-col items-center justify-center
-      w-[200px] px-4 py-6 border border-zinc-300 rounded-lg gap-2
-      transition-colors duration-300
-      hover:border-[var(--hover-bg)] hover:text-[var(--hover-bg)]
+      w-[180px] h-[140px]
+      px-4 py-6 gap-2
+      border border-zinc-200 rounded-xl
+      text-zinc-700
+      transition-all duration-300 ease-in-out
+      hover:text-white
+      hover:scale-105
+      hover:shadow-md
+      hover:bg-[var(--hover-bg)]
+      cursor-pointer
     "
   >
     <Icon size={size} />
-    <span>{name}</span>
+    <span className="font-medium text-sm">{name}</span>
   </div>
 );
 
 const Skills = () => (
-  <section className="flex flex-col items-center justify-center gap-4">
-    <div className="mt-10 text-center">
-      <h2 className="font-bold text-2xl">Tech Skills</h2>
-      <p>Explore as tecnolgias que domino!</p>{" "}
+  <section className="flex flex-col items-center justify-center gap-8 px-4 py-10">
+    <div className="text-center space-y-1">
+      <h2 className="font-bold text-3xl text-zinc-800">Tech Stack</h2>
+      <p className="text-zinc-500 text-sm">Principais tecnologias com as quais tenho experiência e desenvolvo projetos.</p>
     </div>
-    <div className="flex flex-wrap justify-center items-center gap-4">
+
+    <div className="flex flex-wrap justify-center items-center gap-5 max-w-6xl">
       {/* Frontend */}
       <SkillsCard colorBg="#f7df1e" name="JavaScript" icon={SiJavascript} />
       <SkillsCard colorBg="#3178c6" name="TypeScript" icon={SiTypescript} />
