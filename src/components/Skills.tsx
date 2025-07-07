@@ -55,7 +55,7 @@ const SkillsCard = ({ name, icon: Icon, colorBg, size = 24 }: SkillsProps) => (
 const Skills = () => (
   <section className="flex flex-col items-center justify-center gap-8 px-4 py-10">
     <div className="text-center space-y-1">
-      <h2 className="font-bold text-3xl text-zinc-800">Tech Stack</h2>
+      <h4 className="font-bold text-3xl text-zinc-800">Tech Stack</h4>
       <p className="text-zinc-500 text-sm">Principais tecnologias com as quais tenho experiência e desenvolvo projetos.</p>
     </div>
 
