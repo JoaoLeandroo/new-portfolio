@@ -37,9 +37,9 @@ const SkillsCard = ({ name, icon: Icon, colorBg, size = 24 }: SkillsProps) => (
       flex flex-col items-center justify-center
       w-[180px] h-[140px]
       px-4 py-6 gap-2
-      border border-zinc-200 rounded-xl
-      text-zinc-700
-      transition-all duration-300 ease-in-out
+      border border-zinc-200 rounded-2xl
+      text-white
+      transition-all duration-200 ease-in-out
       hover:text-white
       hover:scale-105
       hover:shadow-md
@@ -53,17 +53,17 @@ const SkillsCard = ({ name, icon: Icon, colorBg, size = 24 }: SkillsProps) => (
 );
 
 const Skills = () => (
-  <section className="flex flex-col items-center justify-center gap-8 px-4 py-10">
+  <section className="flex flex-col items-center justify-center gap-8 px-4 py-10 bg-[#212121] text-white">
     <div className="text-center space-y-1">
-      <h4 className="font-bold text-3xl text-zinc-800">Tech Stack</h4>
-      <p className="text-zinc-500 text-sm">Principais tecnologias com as quais tenho experiência e desenvolvo projetos.</p>
+      <h4 className="font-bold text-3xl">Tech Stack</h4>
+      <p className="text-sm">Principais tecnologias com as quais tenho experiência e desenvolvo projetos.</p>
     </div>
 
     <div className="flex flex-wrap justify-center items-center gap-5 max-w-6xl">
       {/* Frontend */}
       <SkillsCard colorBg="#f7df1e" name="JavaScript" icon={SiJavascript} />
       <SkillsCard colorBg="#3178c6" name="TypeScript" icon={SiTypescript} />
-      <SkillsCard colorBg="#61dafb" name="React" icon={SiReact} />
+      <SkillsCard colorBg="#0d47a1" name="React" icon={SiReact} />
       <SkillsCard colorBg="#000000" name="Next.js" icon={SiNextdotjs} />
       <SkillsCard colorBg="#3776ab" name="Python" icon={SiPython} />
 

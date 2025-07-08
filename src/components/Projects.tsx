@@ -14,6 +14,15 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "WebSite Game",
+    description:
+      "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
+    stack: ["React", "TailWind", "Typescript", "Next.Js", "ShadcnUi"],
+    imgSrc: "/projects/roseonline.png",
+    demo: "https://website-roseonlinebr.vercel.app/",
+    repo: "https://github.com/JoaoLeandroo/website-game",
+  },
+  {
     title: "Modelo Portfolio",
     description:
       "Modelo de portfolio feito em Nextjs, com responsividade para todos os formatos de tela",
@@ -21,14 +30,6 @@ const projects: Project[] = [
     imgSrc: "/projects/port.avif",
     demo: "https://joaoleandro-joaoleandroos-projects.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/joaoleandro",
-  },
-  {
-    title: "Rose Online WebSite",
-    description:
-      "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
-    stack: ["React", "TailWind", "Typescript", "Next.Js", "ShadcnUi"],
-    imgSrc: "/projects/roseonline.png",
-    demo: "https://website-roseonlinebr.vercel.app/",
   },
   {
     title: "Stack Burguer ",
@@ -134,7 +135,7 @@ const Projects = () => (
       </h2>
       <p className="text-zinc-500 max-w-2xl">
         Seleção dos trabalhos que mais refletem minhas habilidades em
-        desenvolvimento web, GIS e ciência de dados.
+        desenvolvimento web.
       </p>
     </div>
 
