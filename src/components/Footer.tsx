@@ -23,7 +23,7 @@ const Footer = () => {
             <FiGithub />
           </Link>
           <Link
-            href="https://linkedin.com/in/seu-usuario"
+            href="https://www.linkedin.com/in/joaoleandro10/"
             target="_blank"
             className="hover:text-zinc-900 transition"
             aria-label="LinkedIn"
@@ -31,7 +31,7 @@ const Footer = () => {
             <FiLinkedin />
           </Link>
           <Link
-            href="mailto:seu@email.com"
+            href="mailto:joaoleandro102@gmail.com"
             className="hover:text-zinc-900 transition"
             aria-label="E-mail"
           >

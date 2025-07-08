@@ -14,21 +14,21 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Rose Online Brasil",
-    description: "Adicionar texto...",
-    stack: ["React", "TailWind", "Typescript", "Next.Js", "ShadcnUi"],
-    imgSrc: "/projects/roseonline.png",
-    demo: "https://website-roseonlinebr.vercel.app/",
-    repo: "#",
-  },
-  {
     title: "Modelo Portfolio",
     description:
       "Modelo de portfolio feito em Nextjs, com responsividade para todos os formatos de tela",
     stack: ["React", "TailWind", "Typescript", "Next.Js"],
     imgSrc: "/projects/port.avif",
     demo: "https://joaoleandro-joaoleandroos-projects.vercel.app/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/joaoleandro",
+  },
+  {
+    title: "Rose Online WebSite",
+    description:
+      "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
+    stack: ["React", "TailWind", "Typescript", "Next.Js", "ShadcnUi"],
+    imgSrc: "/projects/roseonline.png",
+    demo: "https://website-roseonlinebr.vercel.app/",
   },
   {
     title: "Stack Burguer ",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     stack: ["React", "TailWind", "Typescript"],
     imgSrc: "/projects/stack-burguer.avif",
     demo: "https://stack-burguer-project.vercel.app/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/stack-burguer-project",
   },
   {
     title: "NextMovies",
@@ -46,7 +46,7 @@ const projects: Project[] = [
     stack: ["React", "TailWind", "Typescript", "Api TheMovieDB"],
     imgSrc: "/projects/nextmovie.png",
     demo: "https://nextmovies-project.vercel.app/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/nextmovies-project",
   },
   {
     title: "TechBooks",
@@ -55,7 +55,7 @@ const projects: Project[] = [
     stack: ["React", "TailWind", "Typescript", "Api Google"],
     imgSrc: "/projects/tech-books.avif",
     demo: "https://techinbooks.vercel.app/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/techinbooks",
   },
   {
     title: "Star Wars - Cronologia",
@@ -64,7 +64,7 @@ const projects: Project[] = [
     stack: ["HTML5", "CSS3", "Javascript"],
     imgSrc: "/projects/starwars.avif",
     demo: "https://joaoleandroo.github.io/page-star_wars-ordem_cronologica/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/page-star_wars-ordem_cronologica",
   },
   {
     title: "Cristiano Ronaldo",
@@ -73,7 +73,7 @@ const projects: Project[] = [
     stack: ["HTML5", "CSS3", "Javascript"],
     imgSrc: "/projects/cristiano.avif",
     demo: "https://joaoleandroo.github.io/cristiano_ronaldo_page/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/cristiano_ronaldo_page",
   },
   {
     title: "Jogo da memória",
@@ -82,7 +82,7 @@ const projects: Project[] = [
     stack: ["React", "TailWind", "Typescript", "Api Google"],
     imgSrc: "/projects/memory-game.avif",
     demo: "https://memory-game-six-rho.vercel.app/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/memory-game",
   },
   {
     title: "Game Pikachu",
@@ -91,7 +91,7 @@ const projects: Project[] = [
     stack: ["HTML5", "CSS3", "Javascript"],
     imgSrc: "/projects/game-pikachu.avif",
     demo: "https://joaoleandroo.github.io/game-pikachu/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/game-pikachu",
   },
   {
     title: "Buscador CEP",
@@ -100,7 +100,7 @@ const projects: Project[] = [
     stack: ["React", "CSS", "Javascript", "Vite", "Consumo API"],
     imgSrc: "/projects/buscador-cep.avif",
     demo: "https://buscador-cep-react-six.vercel.app/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/buscador-cep-react",
   },
   {
     title: "Lista de Tarefas",
@@ -109,7 +109,7 @@ const projects: Project[] = [
     stack: ["HTML5", "CSS3", "Javascript"],
     imgSrc: "/projects/todo-list.avif",
     demo: "https://joaoleandroo.github.io/task-list/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/task-list",
   },
   {
     title: "Projeto Música",
@@ -118,7 +118,7 @@ const projects: Project[] = [
     stack: ["HTML5", "CSS3"],
     imgSrc: "/projects/toms.avif",
     demo: "https://joaoleandroo.github.io/project-music/",
-    repo: "#",
+    repo: "https://github.com/JoaoLeandroo/project-music",
   },
 ];
 
@@ -175,16 +175,6 @@ const Projects = () => (
 
             {/* Botões */}
             <div className="mt-4 flex gap-3">
-              {p.repo && (
-                <Link
-                  href={p.repo}
-                  target="_blank"
-                  className="flex items-center gap-2 px-4 py-2 border border-zinc-300 rounded-md text-sm text-zinc-700 hover:border-zinc-500 hover:bg-zinc-100 transition"
-                >
-                  <FiGithub className="text-lg" />
-                  GitHub
-                </Link>
-              )}
               {p.demo && (
                 <Link
                   href={p.demo}
@@ -193,6 +183,16 @@ const Projects = () => (
                 >
                   <FiExternalLink className="text-lg" />
                   Demo
+                </Link>
+              )}
+              {p.repo && (
+                <Link
+                  href={p.repo}
+                  target="_blank"
+                  className="flex items-center gap-2 px-4 py-2 border border-zinc-300 rounded-md text-sm text-zinc-700 hover:border-zinc-500 hover:bg-zinc-100 transition"
+                >
+                  <FiGithub className="text-lg" />
+                  GitHub
                 </Link>
               )}
             </div>
