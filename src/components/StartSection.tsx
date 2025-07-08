@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { BsWhatsapp } from "react-icons/bs";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const StartSection = () => {
   return (
@@ -11,24 +13,47 @@ const StartSection = () => {
       </h1>
 
       <p className="mt-6 max-w-xl text-zinc-600 text-base sm:text-lg leading-relaxed">
-        Formado em Análise e Desenvolvimento de Sistemas,<br className="hidden sm:block" />
+        Formado em Análise e Desenvolvimento de Sistemas,
+        <br className="hidden sm:block" />
         apaixonado por tecnologia, design e criação de soluções inteligentes.
       </p>
 
-      <div className="mt-8 flex gap-4">
-        <Link
-          href="#"
-          className="px-6 py-2 bg-zinc-800 text-white rounded-md hover:bg-zinc-700 transition"
-        >
-          Ver projetos
-        </Link>
-        <Link
-          href="#contact"
-          className="px-6 py-2 border border-zinc-800 text-zinc-800 rounded-md hover:bg-zinc-100 transition"
-        >
-          Entrar em contato
-        </Link>
-      </div>
+      <div className="mt-8 flex flex-col items-center gap-3">
+  {/* Ícones sociais */}
+  <div className="flex gap-6 text-2xl text-zinc-400">
+    <Link
+      href="https://github.com/JoaoLeandroo"
+      target="_blank"
+      aria-label="GitHub"
+      className="hover:text-zinc-900 transition"
+    >
+      <FiGithub />
+    </Link>
+
+    <Link
+      href="https://www.linkedin.com/in/joaoleandro10/"
+      target="_blank"
+      aria-label="LinkedIn"
+      className="hover:text-zinc-900 transition"
+    >
+      <FiLinkedin />
+    </Link>
+
+    <Link
+      href="https://api.whatsapp.com/send/?phone=5581987666475&text=Ol%C3%A1%2C+meu+nome+%C3%A9+Jo%C3%A3o%2C+precisa+da+minha+ajuda%3F&type=phone_number&app_absent=0"
+      target="_blank"
+      aria-label="WhatsApp"
+      className="hover:text-zinc-900 transition"
+    >
+      <BsWhatsapp />
+    </Link>
+  </div>
+
+  {/* E-mail como texto */}
+  <p className="text-sm text-zinc-600 mt-2 select-all">
+    joaoleandro102@gmail.com
+  </p>
+</div>
     </section>
   );
 };
