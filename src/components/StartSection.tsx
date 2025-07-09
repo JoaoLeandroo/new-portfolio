@@ -26,7 +26,7 @@ const StartSection = () => (
   >
     <motion.h1
       variants={fadeUp}
-      className="font-anton text-5xl sm:text-6xl leading-tight text-zinc-500 dark:text-red-500"
+      className="font-anton text-5xl sm:text-6xl leading-tight text-black dark:text-white"
     >
       João Leandro
       <span className="block font-light text-2xl sm:text-3xl text-zinc-500 typewriter">
@@ -50,7 +50,7 @@ const StartSection = () => (
           href="https://github.com/JoaoLeandroo"
           target="_blank"
           aria-label="GitHub"
-          className="hover:text-zinc-900 transition"
+          className="hover:text-zinc-900 dark:hover:text-zinc-300 transition"
         >
           <FiGithub />
         </Link>
@@ -58,7 +58,7 @@ const StartSection = () => (
           href="https://www.linkedin.com/in/joaoleandro10/"
           target="_blank"
           aria-label="LinkedIn"
-          className="hover:text-zinc-900 transition"
+          className="hover:text-zinc-900 dark:hover:text-zinc-300 transition"
         >
           <FiLinkedin />
         </Link>
@@ -66,12 +66,12 @@ const StartSection = () => (
           href="https://api.whatsapp.com/send?phone=5581987666475&text=Ol%C3%A1%2C+meu+nome+%C3%A9+Jo%C3%A3o%21"
           target="_blank"
           aria-label="WhatsApp"
-          className="hover:text-zinc-900 transition"
+          className="hover:text-zinc-900 dark:hover:text-zinc-300 transition"
         >
           <BsWhatsapp />
         </Link>
       </div>
-      <p className="text-sm text-zinc-600 select-all">joaoleandro102@gmail.com</p>
+      <p className="text-sm text-zinc-600 dark:hover:text-zinc-300 select-all transition">joaoleandro102@gmail.com</p>
     </motion.div>
 
     {/* CSS do efeito de digitação em loop */}
