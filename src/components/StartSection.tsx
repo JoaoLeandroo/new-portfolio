@@ -26,7 +26,7 @@ const StartSection = () => (
   >
     <motion.h1
       variants={fadeUp}
-      className="font-anton text-5xl sm:text-6xl leading-tight text-zinc-500"
+      className="font-anton text-5xl sm:text-6xl leading-tight text-zinc-500 dark:text-red-500"
     >
       João Leandro
       <span className="block font-light text-2xl sm:text-3xl text-zinc-500 typewriter">

@@ -9,7 +9,6 @@ export default function Home() {
       <div className="max-w-[1920px] flex flex-col mx-auto p-4 md:px-16">
         {/* Apresentação */}
         <StartSection />
-
         {/* Sobre */}
         <About />
       </div>

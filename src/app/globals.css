@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: all;
+  themes: lofi --default, dracula;
 }
+
+@custom-variant dark (
+  &:where(html:has(.theme-controller[value="dracula"]:checked) *)
+);
 
 @theme inline {
   --font-anton: var(--font-anton);
