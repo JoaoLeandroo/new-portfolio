@@ -33,7 +33,7 @@ const projects: Project[] = [
     title: "Stack Burguer ",
     description:
       "A ideia desse projeto é consumir uma lista de itens em um restaurante, adicionar esses itens ao carrinho de compras e calcular o valor total dos pedidos.",
-    stack: ["React", "TailWind", "Typescript"],
+    stack: ["React", "TailWind", "Typescript", "Next.Js"],
     imgSrc: "/projects/stack-burguer.avif",
     demo: "https://stack-burguer-project.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/stack-burguer-project",
@@ -42,7 +42,7 @@ const projects: Project[] = [
     title: "NextMovies",
     description:
       "Esse projeto teem como ideia trazer uma serie de informações de filmes e series, como se fosse um straming de videos, foi utilizado a API do TheMovieDB.",
-    stack: ["React", "TailWind", "Typescript", "Api TheMovieDB"],
+    stack: ["React", "TailWind", "Typescript", "Next.Js", "Api TheMovieDB"],
     imgSrc: "/projects/nextmovie.png",
     demo: "https://nextmovies-project.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/nextmovies-project",
@@ -51,7 +51,7 @@ const projects: Project[] = [
     title: "TechBooks",
     description:
       "Nesse projeto foi criado um site, que lista alguns livros de tecnologia, utilizando a API de livros do google.",
-    stack: ["React", "TailWind", "Typescript", "Api Google"],
+    stack: ["React", "TailWind", "Typescript", "Next.Js", "Api Google"],
     imgSrc: "/projects/tech-books.avif",
     demo: "https://techinbooks.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/techinbooks",
