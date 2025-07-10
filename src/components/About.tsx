@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -45,14 +46,14 @@ const About = () => {
         viewport={{ once: true }}
         className="w-full lg:max-w-sm flex flex-col gap-6"
       >
-        <a
-          href="/Joao_Leandro_CV.pdf"
-          target="_blank"
+        <Link
+          href="/assets/new-cv-joaoleandro.pdf"
           rel="noopener noreferrer"
+          download={"new-cv-joaoleandro.pdf"}
           className="block text-center py-3 rounded-md bg-zinc-800 dark:bg-black text-white font-semibold hover:bg-zinc-700 transition"
         >
           Download CV
-        </a>
+        </Link>
 
         <div className="border border-zinc-200 dark:border-zinc-500 rounded-xl p-5 shadow-sm hover:shadow-md transition">
           <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Interesses</h3>
