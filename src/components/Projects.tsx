@@ -1,12 +1,6 @@
-// components/Projects.tsx
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion, type Variants } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-
-/* ---------- tipagens ---------- */
 interface Project {
   title: string;
   description: string;
@@ -16,25 +10,6 @@ interface Project {
   demo?: string;
 }
 
-/* ---------- animações ---------- */
-const container: Variants = {
-  hidden: { opacity: 0 },
-  show:   {
-    opacity: 1,
-    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
-  },
-};
-
-const item: Variants = {
-  hidden: { opacity: 0, y: 32 },
-  show:   {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-};
-
-/* ---------- seus projetos ---------- */
 const projects: Project[] = [
   {
     title: "WebSite Game",
@@ -146,20 +121,14 @@ const projects: Project[] = [
   },
 ];
 
-/* ---------- componente ---------- */
+
 const Projects = () => (
-  <motion.section
+  <section
     id="projects"
     className="w-full px-4 py-14 flex flex-col items-center gap-10"
   >
-    {/* Cabeçalho com fade-up */}
-    <motion.div
-      variants={item}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="text-center space-y-2"
-    >
+    {/* Cabeçalho */}
+    <div className="text-center space-y-2">
       <h2 className="text-3xl sm:text-4xl font-bold text-zinc-800 dark:text-white">
         Projetos Práticos
       </h2>
@@ -167,24 +136,17 @@ const Projects = () => (
         Seleção dos trabalhos que mais refletem minhas habilidades em
         desenvolvimento web.
       </p>
-    </motion.div>
+    </div>
 
-    {/* Grade de cards com stagger */}
-    <motion.div
-      variants={container}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
-      className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl"
-    >
+    {/* Grid de projetos */}
+    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl w-full">
       {projects.map((p) => (
-        <motion.article
+        <article
           key={p.title}
-          variants={item}
           className="flex flex-col overflow-hidden rounded-xl border border-zinc-200 dark:border-black bg-white shadow-sm transition hover:shadow-lg"
         >
-          {/* Thumbnail */}
-          <div className="relative w-full h-48">
+          {/* Imagem */}
+          <div className="relative w-full aspect-[4/3]">
             <Image
               src={p.imgSrc}
               alt={p.title}
@@ -196,10 +158,10 @@ const Projects = () => (
 
           {/* Conteúdo */}
           <div className="flex flex-1 flex-col gap-4 p-5">
-            <h3 className="text-lg font-semibold text-zinc-800">{p.title}</h3>
-            <p className="text-sm text-zinc-600 flex-1">{p.description}</p>
+            <h3 className="text-lg font-semibold text-zinc-800 dark:text-white">{p.title}</h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-300 flex-1">{p.description}</p>
 
-            {/* Tech tags */}
+            {/* Tecnologias */}
             <ul className="flex flex-wrap gap-2">
               {p.stack.map((tech) => (
                 <li
@@ -211,7 +173,7 @@ const Projects = () => (
               ))}
             </ul>
 
-            {/* Botões */}
+            {/* Links */}
             <div className="mt-4 flex gap-3">
               {p.demo && (
                 <Link
@@ -235,10 +197,10 @@ const Projects = () => (
               )}
             </div>
           </div>
-        </motion.article>
+        </article>
       ))}
-    </motion.div>
-  </motion.section>
+    </div>
+  </section>
 );
 
 export default Projects;
