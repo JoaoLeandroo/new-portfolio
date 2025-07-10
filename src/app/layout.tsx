@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="lofi">
       <body
-        className={`${fontPoppins.className} ${fontAnton.variable} antialiased`}
+        className={`${fontPoppins.className} ${fontAnton.variable} antialiased selection:bg-yellow-400 selection:text-black`}
       >
         <div className="flex flex-col min-h-screen">
           <Navbar />

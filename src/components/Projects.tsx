@@ -160,10 +160,10 @@ const Projects = () => (
       viewport={{ once: true }}
       className="text-center space-y-2"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-zinc-800">
+      <h2 className="text-3xl sm:text-4xl font-bold text-zinc-800 dark:text-white">
         Projetos Práticos
       </h2>
-      <p className="text-zinc-500 max-w-2xl">
+      <p className="text-zinc-500 dark:text-zinc-200 max-w-2xl">
         Seleção dos trabalhos que mais refletem minhas habilidades em
         desenvolvimento web.
       </p>
@@ -181,7 +181,7 @@ const Projects = () => (
         <motion.article
           key={p.title}
           variants={item}
-          className="flex flex-col overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition hover:shadow-lg"
+          className="flex flex-col overflow-hidden rounded-xl border border-zinc-200 dark:border-black bg-white shadow-sm transition hover:shadow-lg"
         >
           {/* Thumbnail */}
           <div className="relative w-full h-48">

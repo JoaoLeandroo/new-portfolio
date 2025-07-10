@@ -55,7 +55,7 @@ const SkillsCard = ({ name, icon: Icon, colorBg, size = 24 }: SkillsProps) => (
     className="
       flex flex-col items-center justify-center
       w-[180px] h-[140px] px-4 py-6 gap-2
-      border border-zinc-200 rounded-xl
+      border border-zinc-700 rounded-xl
       text-white
       transition-all duration-300
       hover:text-white hover:scale-105 hover:shadow-md

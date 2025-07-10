@@ -49,16 +49,16 @@ const About = () => {
           href="/Joao_Leandro_CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="block text-center py-3 rounded-md bg-zinc-800 text-white font-semibold hover:bg-zinc-700 transition"
+          className="block text-center py-3 rounded-md bg-zinc-800 dark:bg-black text-white font-semibold hover:bg-zinc-700 transition"
         >
           Download CV
         </a>
 
-        <div className="border border-zinc-200 rounded-xl p-5 shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold mb-4 text-zinc-800">Interesses</h3>
+        <div className="border border-zinc-200 dark:border-zinc-500 rounded-xl p-5 shadow-sm hover:shadow-md transition">
+          <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Interesses</h3>
 
           <ul className="flex flex-wrap gap-3">
-            {["Inteligência Artificial", "Tecnologia", "UI/UX", "Back-end", "Inovação"].map((interest) => (
+            {["Inteligência Artificial", "Tecnologia", "Design Responsivo", "Back-end", "Front-end", "Inovação", "Esportes"].map((interest) => (
               <li
                 key={interest}
                 className="px-4 py-1.5 bg-zinc-100 text-zinc-600 rounded-full text-sm font-medium hover:bg-zinc-200 transition"

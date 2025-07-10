@@ -6,7 +6,7 @@ const Navbar = () => (
       <input
         type="checkbox"
         value="dracula"
-        className="toggle theme-controller border-zinc-300 before:bg-green-500"
+        className="toggle theme-controller border-zinc-300 before:bg-yellow-400"
       />
     </nav>
   </header>

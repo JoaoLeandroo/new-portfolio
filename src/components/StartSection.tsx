@@ -36,7 +36,7 @@ const StartSection = () => (
 
     <motion.p
       variants={fadeUp}
-      className="mt-4 max-w-xl text-zinc-600 text-base sm:text-lg leading-relaxed"
+      className="mt-4 max-w-xl text-zinc-500 dark:text-zinc-200 text-base sm:text-lg leading-relaxed"
     >
       Formado em Análise e Desenvolvimento de Sistemas,
       <br className="hidden sm:block" />
@@ -71,7 +71,7 @@ const StartSection = () => (
           <BsWhatsapp />
         </Link>
       </div>
-      <p className="text-sm text-zinc-600 dark:hover:text-zinc-300 select-all transition">joaoleandro102@gmail.com</p>
+      <p className="text-sm text-zinc-500 dark:text-zinc-200 dark:hover:text-zinc-300 select-all transition">joaoleandro102@gmail.com</p>
     </motion.div>
 
     {/* CSS do efeito de digitação em loop */}
