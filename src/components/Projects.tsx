@@ -158,8 +158,8 @@ const Projects = () => (
 
           {/* Conteúdo */}
           <div className="flex flex-1 flex-col gap-4 p-5">
-            <h3 className="text-lg font-semibold text-zinc-800 dark:text-white">{p.title}</h3>
-            <p className="text-sm text-zinc-600 dark:text-zinc-300 flex-1">{p.description}</p>
+            <h3 className="text-lg font-semibold text-zinc-800">{p.title}</h3>
+            <p className="text-sm text-zinc-600 flex-1">{p.description}</p>
 
             {/* Tecnologias */}
             <ul className="flex flex-wrap gap-2">
