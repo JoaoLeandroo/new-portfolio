@@ -20,6 +20,14 @@ const projects: Project[] = [
     demo: "https://website-roseonlinebr.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/website-game",
   },
+    {
+    title: "Back-end Ecommerce",
+    description:
+      "API backend para e-commerce, com autenticação de usuários, integração a banco de dados e suporte a diversas funcionalidades operacionais.",
+    stack: ["Typescript", "Node.JS", "Express", "JWT", "Prisma", "Postresql"],
+    imgSrc: "/projects/backend-ecommerce.jpeg",
+    repo: "https://github.com/JoaoLeandroo/backend-ecommerce",
+  },
   {
     title: "Modelo Portfolio",
     description:
