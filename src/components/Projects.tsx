@@ -12,6 +12,22 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Pipocando+ Streaming",
+    description:
+      "Plataforma moderna e responsiva de streaming de filmes e séries, desenvolvida com Next.js, TailwindCSS e TypeScript. O Pipocando+ oferece uma interface elegante, busca integrada e integração completa com a API do The Movie Database (TMDB).",
+    stack: [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Shadcn/UI",
+      "TheMovieDB API",
+    ],
+    imgSrc: "/projects/straming.avif",
+    demo: "https://streaming-interface-xi.vercel.app/",
+    repo: "https://github.com/JoaoLeandroo/streaming-interface",
+  },
+  {
     title: "WebSite Game",
     description:
       "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
@@ -20,7 +36,7 @@ const projects: Project[] = [
     demo: "https://website-roseonlinebr.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/website-game",
   },
-    {
+  {
     title: "Back-end Ecommerce",
     description:
       "API backend para e-commerce, com autenticação de usuários, integração a banco de dados e suporte a diversas funcionalidades operacionais.",
@@ -128,7 +144,6 @@ const projects: Project[] = [
     repo: "https://github.com/JoaoLeandroo/project-music",
   },
 ];
-
 
 const Projects = () => (
   <section
