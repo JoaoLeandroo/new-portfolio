@@ -23,7 +23,7 @@ const projects: Project[] = [
       "Shadcn/UI",
       "TheMovieDB API",
     ],
-    imgSrc: "/projects/straming.avif",
+    imgSrc: "/projects/streaming.avif",
     demo: "https://streaming-interface-xi.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/streaming-interface",
   },
