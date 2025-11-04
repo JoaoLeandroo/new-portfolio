@@ -12,22 +12,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Pipocando+ Streaming",
-    description:
-      "Plataforma moderna e responsiva de streaming de filmes e séries, desenvolvida com Next.js, TailwindCSS e TypeScript. O Pipocando+ oferece uma interface elegante, busca integrada e integração completa com a API do The Movie Database (TMDB).",
-    stack: [
-      "Next.js",
-      "React",
-      "TailwindCSS",
-      "TypeScript",
-      "Shadcn/UI",
-      "TheMovieDB API",
-    ],
-    imgSrc: "/projects/streaming.avif",
-    demo: "https://streaming-interface-xi.vercel.app/",
-    repo: "https://github.com/JoaoLeandroo/streaming-interface",
-  },
-  {
     title: "WebSite Game",
     description:
       "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
@@ -43,6 +27,22 @@ const projects: Project[] = [
     stack: ["Typescript", "Node.JS", "Express", "JWT", "Prisma", "Postresql"],
     imgSrc: "/projects/backend-ecommerce.jpeg",
     repo: "https://github.com/JoaoLeandroo/backend-ecommerce",
+  },
+    {
+    title: "Pipocando+ Streaming",
+    description:
+      "Plataforma moderna e responsiva de streaming de filmes e séries, desenvolvida com Next.js, TailwindCSS e TypeScript. O Pipocando+ oferece uma interface elegante, busca integrada e integração completa com a API do The Movie Database (TMDB).",
+    stack: [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Shadcn/UI",
+      "TheMovieDB API",
+    ],
+    imgSrc: "/projects/streaming.avif",
+    demo: "https://streaming-interface-xi.vercel.app/",
+    repo: "https://github.com/JoaoLeandroo/streaming-interface",
   },
   {
     title: "Modelo Portfolio",
