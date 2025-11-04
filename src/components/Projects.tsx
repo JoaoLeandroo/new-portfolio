@@ -12,23 +12,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "WebSite Game",
-    description:
-      "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
-    stack: ["React", "TailWind", "Typescript", "Next.Js", "ShadcnUi"],
-    imgSrc: "/projects/roseonline.png",
-    demo: "https://website-roseonlinebr.vercel.app/",
-    repo: "https://github.com/JoaoLeandroo/website-game",
-  },
-  {
-    title: "Back-end Ecommerce",
-    description:
-      "API backend para e-commerce, com autenticação de usuários, integração a banco de dados e suporte a diversas funcionalidades operacionais.",
-    stack: ["Typescript", "Node.JS", "Express", "JWT", "Prisma", "Postresql"],
-    imgSrc: "/projects/backend-ecommerce.jpeg",
-    repo: "https://github.com/JoaoLeandroo/backend-ecommerce",
-  },
-    {
     title: "Pipocando+ Streaming",
     description:
       "Plataforma moderna e responsiva de streaming de filmes e séries, desenvolvida com Next.js, TailwindCSS e TypeScript. O Pipocando+ oferece uma interface elegante, busca integrada e integração completa com a API do The Movie Database (TMDB).",
@@ -40,10 +23,28 @@ const projects: Project[] = [
       "Shadcn/UI",
       "TheMovieDB API",
     ],
-    imgSrc: "/projects/streaming.avif",
+    imgSrc: "/projects/streaming-pipocando.png",
     demo: "https://streaming-interface-xi.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/streaming-interface",
   },
+  {
+    title: "Back-end Ecommerce",
+    description:
+      "API backend para e-commerce, com autenticação de usuários, integração a banco de dados e suporte a diversas funcionalidades operacionais.",
+    stack: ["Typescript", "Node.JS", "Express", "JWT", "Prisma", "Postresql"],
+    imgSrc: "/projects/backend-ecommerce.jpeg",
+    repo: "https://github.com/JoaoLeandroo/backend-ecommerce",
+  },
+  {
+    title: "WebSite Game",
+    description:
+      "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
+    stack: ["React", "TailWind", "Typescript", "Next.Js", "ShadcnUi"],
+    imgSrc: "/projects/roseonline.png",
+    demo: "https://website-roseonlinebr.vercel.app/",
+    repo: "https://github.com/JoaoLeandroo/website-game",
+  },
+
   {
     title: "Modelo Portfolio",
     description:
