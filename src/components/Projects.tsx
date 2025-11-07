@@ -35,6 +35,22 @@ const projects: Project[] = [
     imgSrc: "/projects/backend-ecommerce.jpeg",
     repo: "https://github.com/JoaoLeandroo/backend-ecommerce",
   },
+
+  {
+    title: "Email Sender API (Gmail SMTP)",
+    description:
+      "API REST em Node.js/Express escrita em TypeScript para envio de e-mails (ex.: recuperação de senha) usando Nodemailer com SMTP do Gmail (App Password). Suporte a .env, validação básica e rota /health.",
+    stack: [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Nodemailer",
+      "Gmail SMTP",
+      "dotenv",
+    ],
+    imgSrc: "/projects/api-emails.png",
+    repo: "https://github.com/JoaoLeandroo/setup-emails-express", // altere para o repositório correto se for outro
+  },
   {
     title: "WebSite Game",
     description:
