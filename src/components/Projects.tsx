@@ -24,7 +24,6 @@ const projects: Project[] = [
       "TheMovieDB API",
     ],
     imgSrc: "/projects/streaming-pipocando.png",
-    demo: "https://streaming-interface-xi.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/streaming-interface",
   },
   {
