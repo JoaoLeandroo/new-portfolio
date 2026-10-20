@@ -12,6 +12,54 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "RevolutionConvert",
+    description:
+      "Website para consultar o resultado das eleições brasileiras, em tempo real.",
+    stack: ["React", "Typescript", "Javascript", "Next.Js", "css"],
+    imgSrc: "/projects/revolutionConvert.avif",
+    demo: "https://revolution-convert-q1dngtjru-joaoleandroos-projects.vercel.app/",
+    repo: "https://github.com/JoaoLeandroo/revolution-convert",
+  },
+  {
+    title: "Email Sender API (Gmail SMTP)",
+    description:
+      "API REST em Node.js/Express escrita em TypeScript para envio de e-mails (ex.: recuperação de senha) usando Nodemailer com SMTP do Gmail (App Password). Suporte a .env, validação básica e rota /health.",
+    stack: [
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Nodemailer",
+      "Gmail SMTP",
+      "dotenv",
+    ],
+    imgSrc: "/projects/api-emails.png",
+    repo: "https://github.com/JoaoLeandroo/setup-emails-express", // altere para o repositório correto se for outro
+  },
+    {
+    title: "Pipocando+ Streaming",
+    description:
+      "Plataforma moderna e responsiva de streaming de filmes e séries, desenvolvida com Next.js, TailwindCSS e TypeScript. O Pipocando+ oferece uma interface elegante, busca integrada e integração completa com a API do The Movie Database (TMDB).",
+    stack: [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "TypeScript",
+      "Shadcn/UI",
+      "TheMovieDB API",
+    ],
+    imgSrc: "/projects/streaming-pipocando.png",
+    repo: "https://github.com/JoaoLeandroo/streaming-interface",
+  },
+  {
+    title: "Apuração Eleições Brasil ",
+    description:
+      "Website para consultar o resultado das eleições brasileiras, em tempo real.",
+    stack: ["React", "Typescript", "Next.Js", "Api TSE"],
+    imgSrc: "/projects/apuracao-brasil.avif",
+    demo: "https://brasil-election-results-2n3ursk7n-joaoleandroos-projects.vercel.app/",
+  },
+
+  {
     title: "WebSite Game",
     description:
       "Site moderno e responsivo do jogo RoseOnline, utilizando Next.JS e design responsivo.",
@@ -31,22 +79,6 @@ const projects: Project[] = [
   },
 
   {
-    title: "Email Sender API (Gmail SMTP)",
-    description:
-      "API REST em Node.js/Express escrita em TypeScript para envio de e-mails (ex.: recuperação de senha) usando Nodemailer com SMTP do Gmail (App Password). Suporte a .env, validação básica e rota /health.",
-    stack: [
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "Nodemailer",
-      "Gmail SMTP",
-      "dotenv",
-    ],
-    imgSrc: "/projects/api-emails.png",
-    repo: "https://github.com/JoaoLeandroo/setup-emails-express", // altere para o repositório correto se for outro
-  },
-
-  {
     title: "Modelo Portfolio",
     description:
       "Modelo de portfolio feito em Nextjs, com responsividade para todos os formatos de tela",
@@ -56,21 +88,7 @@ const projects: Project[] = [
     repo: "https://github.com/JoaoLeandroo/joaoleandro",
   },
 
-  {
-    title: "Pipocando+ Streaming",
-    description:
-      "Plataforma moderna e responsiva de streaming de filmes e séries, desenvolvida com Next.js, TailwindCSS e TypeScript. O Pipocando+ oferece uma interface elegante, busca integrada e integração completa com a API do The Movie Database (TMDB).",
-    stack: [
-      "Next.js",
-      "React",
-      "TailwindCSS",
-      "TypeScript",
-      "Shadcn/UI",
-      "TheMovieDB API",
-    ],
-    imgSrc: "/projects/streaming-pipocando.png",
-    repo: "https://github.com/JoaoLeandroo/streaming-interface",
-  },
+
   {
     title: "Stack Burguer ",
     description:
@@ -142,24 +160,6 @@ const projects: Project[] = [
     imgSrc: "/projects/buscador-cep.avif",
     demo: "https://buscador-cep-react-six.vercel.app/",
     repo: "https://github.com/JoaoLeandroo/buscador-cep-react",
-  },
-  {
-    title: "Lista de Tarefas",
-    description:
-      "Lista de tarefas com todos os requisitos de CRUD, criar, ler, atualizar e deletar uma tarefa. Também foi utilizada o salvamento de localstorage.",
-    stack: ["HTML5", "CSS3", "Javascript"],
-    imgSrc: "/projects/todo-list.avif",
-    demo: "https://joaoleandroo.github.io/task-list/",
-    repo: "https://github.com/JoaoLeandroo/task-list",
-  },
-  {
-    title: "Projeto Música",
-    description:
-      "Projeto de música landing page, feito utilizando tecnologias como HTML e CSS.",
-    stack: ["HTML5", "CSS3"],
-    imgSrc: "/projects/toms.avif",
-    demo: "https://joaoleandroo.github.io/project-music/",
-    repo: "https://github.com/JoaoLeandroo/project-music",
   },
 ];
 
