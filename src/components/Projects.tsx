@@ -14,7 +14,7 @@ const projects: Project[] = [
   {
     title: "RevolutionConvert",
     description:
-      "Website para consultar o resultado das eleições brasileiras, em tempo real.",
+      "Website para converter arquivos e imagens de diferentes formatos, como jpg, png, gif, svg, etc.",
     stack: ["React", "Typescript", "Javascript", "Next.Js", "css"],
     imgSrc: "/projects/revolutionConvert.avif",
     demo: "https://revolution-convert-q1dngtjru-joaoleandroos-projects.vercel.app/",
