@@ -40,7 +40,7 @@ const Projects = () => (
     </div>
     <div className="mb-6 mt-12">
       <h3 className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100">Outras experiências</h3>
-      <p className="mt-2 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">Projetos complementares com foco em carrinho de compras e integração com serviços de e-mail.</p>
+      <p className="mt-2 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">Projetos complementares que exploram interfaces temáticas e integração com serviços de e-mail.</p>
     </div>
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
       {projects.filter((project) => !project.featured).map((project) => <ProjectCard key={project.slug} project={project} />)}
