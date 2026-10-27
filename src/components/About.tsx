@@ -1,76 +1,103 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { motion, useReducedMotion } from "motion/react";
+import { FiArrowUpRight, FiBookOpen, FiCode, FiCompass } from "react-icons/fi";
+
+const interests = [
+  "Inteligência Artificial", "Tecnologia", "Design Responsivo",
+  "Back-end", "Front-end", "Inovação", "Esportes",
+];
 
 const About = () => {
+  const reducedMotion = useReducedMotion();
+
   return (
-    <section className="w-full px-4 py-16 flex flex-col lg:flex-row justify-between items-start gap-12">
-      {/* Texto principal */}
-      <motion.article
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
-        className="max-w-3xl text-zinc-700 dark:text-white leading-relaxed"
-      >
-        <h2 className="text-3xl sm:text-4xl font-bold text-zinc-800 dark:text-white mb-6">
-          João Leandro
-        </h2>
-
-        <p className="text-base sm:text-lg mb-4">
-          Olá! Meu nome é João Leandro e sou apaixonado por tecnologia e desenvolvimento web.
-          Graduei-me em Análise e Desenvolvimento de Sistemas e, desde então, venho trilhando uma jornada empolgante no mundo da programação.
-        </p>
-
-        <p className="text-base sm:text-lg mb-4">
-          Tudo começou em 2022, quando fui apresentado ao fascinante universo do código por amigos que compartilhavam o mesmo interesse em um jogo online chamado Rose Online.
-          A curiosidade daquele momento me levou a explorar mais, dando origem à minha paixão pelo desenvolvimento web.
-        </p>
-
-        <p className="text-base sm:text-lg mb-4">
-          Desde então, venho dedicando meu tempo ao aprendizado contínuo. Minha principal stack é JavaScript, especialmente no frontend,
-          onde gosto de criar experiências interativas e funcionais. Também tenho conhecimentos sólidos em Python e domínio de diversas ferramentas e frameworks do ecossistema JavaScript.
-        </p>
-
-        <p className="text-base sm:text-lg">
-          Estou sempre em busca de novos desafios e oportunidades para crescer. Acredito na tecnologia como força transformadora e adoro criar soluções que impactam positivamente a vida das pessoas.
-        </p>
-      </motion.article>
-
-      {/* Bloco lateral com animação */}
-      <motion.aside
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        viewport={{ once: true }}
-        className="w-full lg:max-w-sm flex flex-col gap-6"
-      >
-        <Link
-          href="/assets/new-cv-joaoleandro.pdf"
-          rel="noopener noreferrer"
-          download={"new-cv-joaoleandro.pdf"}
-          className="block text-center py-3 rounded-md bg-zinc-800 dark:bg-black text-white font-semibold hover:bg-zinc-700 transition"
-        >
-          Download CV
-        </Link>
-
-        <div className="border border-zinc-200 dark:border-zinc-500 rounded-xl p-5 shadow-sm hover:shadow-md transition">
-          <h3 className="text-xl font-semibold mb-4 text-zinc-800 dark:text-white">Interesses</h3>
-
-          <ul className="flex flex-wrap gap-3">
-            {["Inteligência Artificial", "Tecnologia", "Design Responsivo", "Back-end", "Front-end", "Inovação", "Esportes"].map((interest) => (
-              <li
-                key={interest}
-                className="px-4 py-1.5 bg-zinc-100 text-zinc-600 rounded-full text-sm font-medium hover:bg-zinc-200 transition"
-              >
-                {interest}
-              </li>
-            ))}
-          </ul>
+    <motion.section
+      id="about"
+      aria-labelledby="about-heading"
+      initial={reducedMotion ? false : { opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
+      className="mx-auto w-full max-w-6xl scroll-mt-20 px-2 py-14 sm:px-4 sm:py-20"
+    >
+      <header className="mb-10 flex flex-col gap-5 border-b border-zinc-200 pb-8 sm:flex-row sm:items-end sm:justify-between dark:border-zinc-700">
+        <div>
+          <span className="mb-3 inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
+            <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+            Além do código
+          </span>
+          <h2 id="about-heading" className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-white">
+            Um pouco sobre mim<span className="text-violet-500">.</span>
+          </h2>
         </div>
-      </motion.aside>
-    </section>
+        <p className="max-w-xs text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
+          Curiosidade para aprender.<br />
+          Dedicação para transformar ideias em realidade.
+        </p>
+      </header>
+
+      <div className="grid min-w-0 gap-10 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] lg:gap-14">
+        <div>
+          <p className="max-w-2xl text-xl font-medium leading-relaxed tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
+            Sou João Leandro, desenvolvedor web movido pela curiosidade e pela vontade de criar soluções que façam sentido para as pessoas.
+          </p>
+
+          <div className="mt-8 space-y-7">
+            <article className="grid grid-cols-[32px_minmax(0,1fr)] gap-4">
+              <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-50 text-violet-600 dark:bg-violet-500/10 dark:text-violet-300"><FiCompass size={17} /></span>
+              <div>
+                <h3 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">Tudo começou com curiosidade</h3>
+                <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-400">
+                  Em 2022, amigos que compartilhavam comigo o interesse pelo jogo Rose Online me apresentaram ao universo da programação. O que começou como curiosidade se tornou uma jornada de aprendizado e criação.
+                </p>
+              </div>
+            </article>
+
+            <article className="grid grid-cols-[32px_minmax(0,1fr)] gap-4">
+              <span aria-hidden="true" className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-50 text-violet-600 dark:bg-violet-500/10 dark:text-violet-300"><FiCode size={17} /></span>
+              <div>
+                <h3 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">Da ideia à experiência</h3>
+                <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-400">
+                  Meu foco é o desenvolvimento front-end com JavaScript e seu ecossistema, criando interfaces interativas e funcionais. Também tenho conhecimentos em Python e sigo explorando ferramentas para construir soluções cada vez melhores.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <p className="mt-8 border-l-2 border-violet-400 pl-5 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+            Acredito na tecnologia como uma forma de conectar pessoas e resolver problemas. Por isso, estou sempre aberto a novos desafios e oportunidades para crescer.
+          </p>
+        </div>
+
+        <aside aria-label="Formação e interesses" className="flex min-w-0 flex-col gap-5">
+          <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:p-7 dark:border-zinc-700 dark:bg-zinc-900">
+            <div className="mb-5 flex items-center justify-between">
+              <span className="text-xs font-medium uppercase tracking-[0.15em] text-zinc-500 dark:text-zinc-400">Formação</span>
+              <FiBookOpen aria-hidden="true" className="text-violet-500" size={20} />
+            </div>
+            <h3 className="text-lg font-semibold leading-snug tracking-tight text-zinc-900 dark:text-zinc-100">Análise e Desenvolvimento de Sistemas</h3>
+            <p className="mt-3 flex items-center gap-2 text-xs font-medium text-zinc-500 dark:text-zinc-400">
+              <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+              Graduação concluída
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-zinc-200 p-6 sm:p-7 dark:border-zinc-700">
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">O que me inspira</h3>
+              <FiArrowUpRight aria-hidden="true" className="text-zinc-400" size={19} />
+            </div>
+            <p className="mb-5 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">Interesses que alimentam minha criatividade dentro e fora do desenvolvimento.</p>
+            <ul className="flex flex-wrap gap-2">
+              {interests.map((interest) => (
+                <li key={interest} className="rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs font-medium text-zinc-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-300">{interest}</li>
+              ))}
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </motion.section>
   );
 };
 
