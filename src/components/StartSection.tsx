@@ -104,7 +104,7 @@ const StartSection = () => {
 
       <div className="grid min-w-0 items-center gap-12 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:gap-14">
         <div className="min-w-0">
-          <motion.p
+          {/* <motion.p
             variants={fadeUp}
             className="mb-6 inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-zinc-500 dark:text-zinc-400"
           >
@@ -112,8 +112,8 @@ const StartSection = () => {
               aria-hidden="true"
               className="h-1.5 w-1.5 rounded-full bg-violet-500"
             />
-            Desenvolvimento web · Portfólio
-          </motion.p>
+            Desenvolvimento web 
+          </motion.p> */}
 
           <motion.h1
             id="intro-heading"
