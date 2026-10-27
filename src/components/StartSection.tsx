@@ -2,6 +2,7 @@
 
 import type { MouseEvent } from "react";
 import Image from "next/image";
+import { featuredProject } from "@/data/projects";
 import Link from "next/link";
 import { motion, useReducedMotion, type Variants } from "motion/react";
 import { BsWhatsapp } from "react-icons/bs";
@@ -213,8 +214,8 @@ const StartSection = () => {
             </div>
             <div className="relative aspect-[16/10] overflow-hidden bg-zinc-950">
               <Image
-                src="/projects/streaming-pipocando.png"
-                alt="Interface do Pipocando+, projeto de streaming de filmes e séries"
+                src={featuredProject.imgSrc}
+                alt={`Prévia de ${featuredProject.title}, conversor de arquivos no navegador`}
                 fill
                 priority
                 sizes="(max-width: 1023px) 100vw, 500px"
@@ -226,17 +227,16 @@ const StartSection = () => {
                 id="featured-heading"
                 className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-100"
               >
-                Pipocando+ Streaming
+                {featuredProject.title}
               </h2>
               <p className="mt-2 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
-                Interface de filmes e séries com busca integrada e consumo da
-                API do TMDB.
+                {featuredProject.description}
               </p>
               <ul
                 aria-label="Tecnologias do projeto"
                 className="mt-4 flex flex-wrap gap-2"
               >
-                {["Next.js", "TypeScript", "Tailwind CSS"].map((tech) => (
+                {featuredProject.stack.map((tech) => (
                   <li
                     key={tech}
                     className="rounded-md bg-zinc-100 px-2.5 py-1 text-[11px] font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300"
@@ -245,11 +245,19 @@ const StartSection = () => {
                   </li>
                 ))}
               </ul>
+              <div className="mt-5 flex flex-wrap items-center gap-4">
+                {featuredProject.demo && (
+                  <a href={featuredProject.demo} target="_blank" rel="noopener noreferrer" aria-label={`Abrir demonstração de ${featuredProject.title} (nova aba)`} className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-violet-600 px-4 py-2 text-xs font-medium text-white hover:bg-violet-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-500">
+                    Experimentar ferramenta <FiArrowUpRight aria-hidden="true" />
+                  </a>
+                )}
+                <Link href={`/projetos/${featuredProject.slug}`} className="inline-flex min-h-11 items-center gap-2 rounded-md text-xs font-medium text-violet-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-500 dark:text-violet-300">Conheça o projeto <FiArrowUpRight aria-hidden="true" /></Link>
+              </div>
               <Link
-                href="https://github.com/JoaoLeandroo/streaming-interface"
+                href={featuredProject.repo}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Ver código do Pipocando+ no GitHub (abre em nova aba)"
+                aria-label={`Ver código de ${featuredProject.title} no GitHub (abre em nova aba)`}
                 className="mt-5 inline-flex min-h-11 items-center gap-2 rounded-md text-sm font-medium text-violet-700 transition-colors hover:text-violet-500 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-violet-500 dark:text-violet-300 dark:hover:text-violet-200"
               >
                 <FiGithub aria-hidden="true" size={17} />

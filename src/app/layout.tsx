@@ -17,8 +17,8 @@ const fontAnton = Bungee({
 });
 
 export const metadata: Metadata = {
-  title: "João Leandro - Portfólio",
-  description: "Criando soluções para o mundo",
+  title: "João Leandro | Desenvolvedor Full Stack",
+  description: "Portfólio de João Leandro, desenvolvedor Full Stack com React, Next.js, TypeScript e Node.js. Conheça aplicações web, APIs e os detalhes de cada projeto.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="lofi">
+    <html lang="pt-BR" data-theme="lofi">
       <body
         className={`${fontPoppins.className} ${fontAnton.variable} antialiased selection:bg-yellow-400 selection:text-black`}
       >

@@ -40,7 +40,7 @@ const About = () => {
       <div className="grid min-w-0 gap-10 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)] lg:gap-14">
         <div>
           <p className="max-w-2xl text-xl font-medium leading-relaxed tracking-tight text-zinc-800 sm:text-2xl dark:text-zinc-100">
-            Sou João Leandro, desenvolvedor web movido pela curiosidade e pela vontade de criar soluções que façam sentido para as pessoas.
+            Sou João Leandro, desenvolvedor Full Stack movido pela curiosidade e pela vontade de criar soluções que façam sentido para as pessoas.
           </p>
 
           <div className="mt-8 space-y-7">
@@ -59,7 +59,7 @@ const About = () => {
               <div>
                 <h3 className="mb-2 text-sm font-semibold text-zinc-900 dark:text-zinc-100">Da ideia à experiência</h3>
                 <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-400">
-                  Meu foco é o desenvolvimento front-end com JavaScript e seu ecossistema, criando interfaces interativas e funcionais. Também tenho conhecimentos em Python e sigo explorando ferramentas para construir soluções cada vez melhores.
+                  Desenvolvo interfaces com React e Next.js e APIs com Node.js, Express e TypeScript. Nos meus projetos, exploro autenticação, integração com serviços externos e persistência de dados com Prisma e PostgreSQL.
                 </p>
               </div>
             </article>
